@@ -1,0 +1,12 @@
+<form [formGroup]="chuletonForm" (ngSubmit)="onSubmit()" class="form-add">
+  <input type="text" formControlName="tipo" placeholder="Ej: Tomahawk, T-Bone...">
+  <input type="text" formControlName="origen" placeholder="Ej: Galicia, Nebraska...">
+  
+  <div class="row">
+    <input type="number" formControlName="peso" placeholder="Peso (kg)">
+    <input type="number" formControlName="maduracion" placeholder="Días maduración">
+    <input type="number" formControlName="cantidad" placeholder="Cantidad">
+  </div>
+
+  <button type="submit" [disabled]="chuletonForm.invalid">Añadir al Pedido</button>
+</form>

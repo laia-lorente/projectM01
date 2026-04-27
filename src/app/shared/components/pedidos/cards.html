@@ -1,0 +1,19 @@
+<div class="card-container">
+  <div class="card-header">
+    <h3>{{ pedido().tipo }}</h3>
+    <span class="badge-origen">{{ pedido().origen }}</span>
+  </div>
+  
+  <div class="card-body">
+    <div class="info-item">
+      <span>Peso:</span> <strong>{{ pedido().peso }}kg</strong>
+    </div>
+    <div class="info-item">
+      <span>Maduración:</span> <strong>{{ pedido().maduracion }} días</strong>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <span class="cantidad">Cantidad: {{ pedido().cantidad }}</span>
+  </div>
+</div>
